@@ -4,7 +4,9 @@ import svgLoader from 'vite-svg-loader';
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@pinia/nuxt'],
-  app: {},
+  app: {
+    baseURL: '/kelnik-front-test/',
+  },
   css: ['~/assets/styles/common.sass'],
   vite: {
     plugins: [
@@ -26,3 +28,4 @@ export default defineNuxtConfig({
     ]
   },
 });
+
