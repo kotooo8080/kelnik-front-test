@@ -20,6 +20,7 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
       svgLoader({
+        svgo: true,
         svgoConfig: {
           plugins: [
             {
