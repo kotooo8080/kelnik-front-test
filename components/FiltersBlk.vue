@@ -1,5 +1,5 @@
 <template>
-  <section class="filters">
+  <div class="filters">
     <!-- Кнопки по комнатам -->
     <div class="filters_rooms">
       <button
@@ -83,7 +83,7 @@
     <button class="filters_btn" @click="flatsStore.resetFilters">
       Сбросить параметры <ClearIcon />
     </button>
-  </section>
+  </div>
 </template>
 
 <script setup lang="ts">

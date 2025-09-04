@@ -1,5 +1,5 @@
 <template>
-  <section class="flats-list">
+  <div class="flats-list">
     <ul class="flats-list_flats">
       <li v-for="flat in visibleItems" :key="flat.id">
         <FlatItem :flat="flat" />
@@ -13,7 +13,7 @@
     >
       Загрузить еще
     </button>
-  </section>
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -1,5 +1,5 @@
 <template>
-  <section class="sorting">
+  <div class="sorting">
     <div class="sorting_info">
       <span>Планировка</span>
       <span>Квартира</span>
@@ -25,7 +25,7 @@
         </span>
       </button>
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup lang="ts">
