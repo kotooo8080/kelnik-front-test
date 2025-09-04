@@ -6,6 +6,15 @@ export default defineNuxtConfig({
   modules: ['@pinia/nuxt'],
   app: {
     baseURL: '/kelnik-front-test/',
+    head: {
+      title: 'Flats',
+      meta: [
+        { name: 'description', content: 'Kelnik Front Test' }
+      ],
+      htmlAttrs: {
+        lang: 'ru'
+      }
+    }
   },
   css: ['~/assets/styles/common.sass'],
   vite: {

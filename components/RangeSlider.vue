@@ -37,7 +37,7 @@ const emit = defineEmits<{
 // Локальная реактивная копия диапазона
 const localValue = ref<RangeValue>([...props.modelValue]);
 
-// синхронизация локальной копии с родителем
+// Синхронизация локальной копии с родителем
 watch(
   () => props.modelValue,
   (val) => {

@@ -149,6 +149,7 @@ const flatsStore = useFlatsStore();
 
   span
     flex-shrink: 0 
+    font-size: 16px
     color: rgba(11, 23, 57, 0.2)
 
   input
@@ -160,15 +161,12 @@ const flatsStore = useFlatsStore();
     font-size: 16px
   input[type=number]:focus
     outline: none
-  /* Chrome, Safari, Edge */
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button
     -webkit-appearance: none
     margin: 0
-  /* Firefox */
   input[type=number]
     -moz-appearance: textfield
-  /* Опционально: убрать и в старых версиях Edge */
   input[type=number]::-ms-clear,
   input[type=number]::-ms-reveal
     display: none
@@ -183,6 +181,8 @@ const flatsStore = useFlatsStore();
 @media (max-width: 960px)
   .filters
     padding: 20px 19px
-  .filters_scale_top_item span, .filters_btn
+  .filters_scale-wrapper, .filters_btn
     font-size: 13px
+  .filters_scale_top_item span
+    font-size: 14px
 </style>

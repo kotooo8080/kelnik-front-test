@@ -13,7 +13,7 @@
         @click="flatsStore.setSort(sort.id)"
       >
         <span v-html="sort.name" />
-        <div class="sorting_sort_arrows">
+        <span class="sorting_sort_arrows">
           <ArrowIcon
             class="sorting_sort_arrow"
             :class="{ '__active': flatsStore.sortField === sort.id && flatsStore.sortOrder === 'asc' }"
@@ -22,7 +22,7 @@
             class="sorting_sort_arrow __reverse"
             :class="{ '__active': flatsStore.sortField === sort.id && flatsStore.sortOrder === 'desc' }"
           />
-        </div>
+        </span>
       </button>
     </div>
   </section>
@@ -65,7 +65,7 @@ const flatsStore = useFlatsStore();
   
   max-width: 120px
   min-width: 0
-  font-family: 'PT-root-ui', sans-serif
+  font-family: 'PT-Root-UI', sans-serif
   &.__active
     color: variables.$accent-green
 .sorting_sort_arrows
